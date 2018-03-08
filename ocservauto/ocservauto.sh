@@ -494,7 +494,7 @@ function tar_ocserv_install(){
     oc_version=${oc_version:-${Default_oc_version}}
     [ "$OC_version_latest" = "" ] && {
 #可以换成自己的下载地址
-        oc_version='0.10.8'
+        oc_version='0.11.11'
         curl -SOL "https://github.com/fanyueciyuan/ocserv-backup/raw/master/ocserv-$oc_version.tar.xz"
     } || {
         wget -c ftp://ftp.infradead.org/pub/ocserv/ocserv-$oc_version.tar.xz
